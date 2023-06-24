@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ejercicio_intents</string>
+    <string name="imagen1">imagen1</string>
+    <string name="imagen2">imagen2</string>
+    <string name="imagen3">imagen3</string>
+    <string name="imagen4">imagen4</string>
+    <string name="secondActivityTitle">THIS IS THE SECOND ACTIVITY</string>
+    <string name="secondactivityimage">secondActivityImage</string>
+    <string name="volver">VOLVER</string>
 </resources>

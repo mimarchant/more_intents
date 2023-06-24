@@ -15,7 +15,8 @@
         android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baseline_android_24" />
+        app:srcCompat="@drawable/baseline_android_24"
+        android:contentDescription="@string/imagen1" />
 
     <ImageView
         android:id="@+id/image2"
@@ -26,7 +27,8 @@
         app:layout_constraintStart_toEndOf="@+id/image1"
         app:layout_constraintTop_toTopOf="@+id/image1"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/baseline_escalator_warning_24" />
+        app:srcCompat="@drawable/baseline_escalator_warning_24"
+        android:contentDescription="@string/imagen2"/>
 
     <ImageView
         android:id="@+id/image3"
@@ -36,7 +38,8 @@
         app:layout_constraintEnd_toEndOf="@+id/image1"
         app:layout_constraintStart_toStartOf="@+id/image1"
         app:layout_constraintTop_toBottomOf="@+id/image1"
-        app:srcCompat="@drawable/baseline_filter_vintage_24" />
+        app:srcCompat="@drawable/baseline_filter_vintage_24"
+        android:contentDescription="@string/imagen3"/>
 
     <ImageView
         android:id="@+id/image4"
@@ -47,5 +50,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/image2"
         app:layout_constraintTop_toBottomOf="@+id/image2"
-        app:srcCompat="@drawable/baseline_hiking_24" />
+        app:srcCompat="@drawable/baseline_hiking_24"
+        android:contentDescription="@string/imagen4"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
