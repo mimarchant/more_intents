@@ -31,34 +31,35 @@ public class MainActivity extends AppCompatActivity {
         image1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goToSecondActivity();
+                goToSecondActivity(imagen1);
             }
         });
 
         image2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goToSecondActivity();
+                goToSecondActivity(imagen2);
             }
         });
 
         image3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goToSecondActivity();
+                goToSecondActivity(imagen3);
             }
         });
 
         image4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goToSecondActivity();
+                goToSecondActivity(imagen4);
             }
         });
     }
 
-    private void goToSecondActivity() {
+    private void goToSecondActivity(int imagen) {
         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+        intent.putExtra("vector", imagen);
         startActivity(intent);
     }
 }

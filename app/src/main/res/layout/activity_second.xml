@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".SecondActivity">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="462dp"
-        android:layout_height="477dp"
-        android:layout_marginTop="64dp"
+        android:layout_width="447dp"
+        android:layout_height="322dp"
+        android:layout_marginTop="32dp"
         android:gravity="center"
         android:text="THIS IS THE SECOND ACTIVITY"
         android:textSize="34sp"
@@ -18,14 +19,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="266dp"
+        android:layout_height="258dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/baseline_10k_24" />
+
     <Button
         android:id="@+id/backBtn"
         android:layout_width="368dp"
         android:layout_height="113dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:text="VOLVER"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

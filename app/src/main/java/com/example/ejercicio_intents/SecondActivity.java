@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -19,6 +20,13 @@ public class SecondActivity extends AppCompatActivity {
 
     private void initListeners() {
         Button backBtn = findViewById(R.id.backBtn);
+        ImageView avatar = findViewById(R.id.avatar);
+
+        int vectorDrawableId = getIntent().getIntExtra("vector", 0);
+
+        if(vectorDrawableId != 0) {
+            avatar.setImageResource(vectorDrawableId);
+        }
 
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
